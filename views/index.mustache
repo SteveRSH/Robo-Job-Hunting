@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Robo Employment</title>
+</head>
 <body>
-<script src="roboHunt.js"></script>
+<script src="express-app.js"></script>
+<div container = "holder">
+{{ #users }}
+<p><img src= "{{avatar}}" ></img></p>
+<p class = "name">{{name}} </p>
+<p class = "job">{{job}}</p>
+<p class = "street">{{company}}</p>
+{{ /users }}
+</div>
 </body>
 </html>
