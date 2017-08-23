@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
   res.render('index.mustache', {users: data.users });
 });
 
-app.listen(3001, function () {
+app.listen(3000, function () {
   console.log('coding helps solve problems!')
 });
 

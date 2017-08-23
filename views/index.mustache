@@ -2,16 +2,21 @@
 <html>
 <head>
   <title>Robo Employment</title>
+  <link rel="stylesheet" href="mustache.css">
 </head>
 <body>
-<script src="express-app.js"></script>
-<div container = "holder">
+<h1>Robo Employment</h1>
+
+<br><br>
+
 {{ #users }}
+<div id = "container">
 <p><img src= "{{avatar}}" ></img></p>
 <p class = "name">{{name}} </p>
 <p class = "job">{{job}}</p>
 <p class = "street">{{company}}</p>
-{{ /users }}
 </div>
+{{ /users }}
+<script src="express-app.js"></script>
 </body>
 </html>
